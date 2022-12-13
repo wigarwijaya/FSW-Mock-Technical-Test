@@ -1,0 +1,48 @@
+############# USER #############
+# POST http://localhost:4000/api/user/signup/
+# Content-Type: application/json
+
+# {
+#     "user": 2345
+# }
+
+###
+# POST http://localhost:4000/api/user/login/
+# Content-Type: application/json
+
+# {
+#     "user": 1234
+# }
+
+############# TODO LIST #############
+
+### ERROR ###
+# POST http://localhost:4000/api/todolist/item/
+# Content-Type: application/json
+
+# {
+# "item": "ini adalah Todo List dari Mock Up test",
+# "user_id": "6398541eae1b40394e225b65"
+# }
+
+###
+
+### ERROR ###
+# GET http://localhost:4000/api/todolist/items/ 
+# Content-Type: application/json
+
+###
+
+# GET http://localhost:4000/api/todolist/63985edf29a5111e22cc2644 
+# Content-Type: application/json
+
+###
+
+# PATCH http://localhost:4000/api/todolist/item/63985edf29a5111e22cc2644
+# Content-Type: application/json
+
+# {
+# "item": "ini adalah Todo List dari Mock Up test"
+# }
+
+###
