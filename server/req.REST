@@ -27,22 +27,40 @@
 
 ###
 
-### ERROR ###
+### POST AN ITEM SUCCESS ###
+# POST http://localhost:4000/api/todolist/item/
+# Content-Type: application/json
+
+# {
+#     "item": "This is the fourth thing to do"
+# }
+
+###
+
+### GET ALL ITEMS SUCCESS ###
 # GET http://localhost:4000/api/todolist/items/ 
 # Content-Type: application/json
 
 ###
 
-# GET http://localhost:4000/api/todolist/63985edf29a5111e22cc2644 
+### GET A SINGLE ITEM SUCCESS ###
+# GET http://localhost:4000/api/todolist/6399898b7f33b0d6e8cd2658 
 # Content-Type: application/json
 
 ###
 
+### UPDATE AN ITEM SUCCESS ###
 # PATCH http://localhost:4000/api/todolist/item/63985edf29a5111e22cc2644
 # Content-Type: application/json
 
 # {
-# "item": "ini adalah Todo List dari Mock Up test"
+# "item": "Below is the things to do"
 # }
+
+###
+
+### DELETE AN ITEM SUCCESS ###
+# DELETE http://localhost:4000/api/todolist/item/639989957f33b0d6e8cd265c
+# Content-Type: application/json
 
 ###

@@ -9,11 +9,11 @@ const TodoItemSchema = new Schema({
         type: String,
         required: true
     },
-    user_id:{
-        type: String,
-        required: true
-    }
-})
+    // user_id:{
+    //     type: String,
+    //     required: true
+    // }
+}, { timestamps: true })
 
 //export this Schema
 module.exports = mongoose.model('Todo', TodoItemSchema)

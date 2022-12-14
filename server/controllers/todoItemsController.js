@@ -5,8 +5,8 @@ const TodoItems = require('../models/todoItemModel')
 // get all todoItems
 const getTodoList = async (req, res) => {
     try {
-        const user_id = req.user._id
-        const todoList = await TodoItems.find({ user_id }).sort({ createdAt: -1 });
+        // const user_id = req.user._id
+        const todoList = await TodoItems.find({/* user_id */}).sort({ createdAt: 1 });
 
         res.status(200).json(todoList)
     } catch (err) {
@@ -37,8 +37,8 @@ const createTodoItem = async (req, res) => {
 
     // add doc to the database
     try {
-        const user_id = req.user._id
-        const newTodoItem = await TodoItems.create({ item, user_id })
+        // const user_id = req.user._id
+        const newTodoItem = await TodoItems.create({ item /*, user_id */ })
         res.status(200).json(newTodoItem)
     } catch (err) {
         res.status(400).json({err: err.message})

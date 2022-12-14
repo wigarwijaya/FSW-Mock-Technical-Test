@@ -1,13 +1,16 @@
 require("dotenv").config();
-
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require('cors');
 
 const todoItemRoutes = require("./routes/todoItems");
 const userRoutes = require("./routes/users");
 
 //express app
 const app = express();
+
+//use cors to allow access from different address (localhost:4000 => localhost:5173)
+app.use(cors())
 
 port = process.env.PORT;
 //middleware
